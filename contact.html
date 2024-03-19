@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="This is a computer traning cennter management system. We manage Computer training center software, courses, instructors, & students online.">
+      
+      <!-- CSS & Bootstrap cdns  -->
+      <link rel="shortcut icon" href="./images/w-1.jpeg" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700;800&amp;family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Fira+Sans:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <link rel="stylesheet" href="style.css">
+      <title>Computer Training Center Management System</title>
+</head>
+   <body>
+      <!-- navbar start here -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-2">
+         <div class="container">
+               <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                     <img src="./images/logo-removebg-preview.png" alt="logo" class="img-fluid m-auto">
+               </a>
+               <button type="button" class="navbar-toggler border border-0" data-bs-toggle="offcanvas" data-bs-target="#openMenu" aria-controls="openMenu">
+                     <span><i class="fa-solid fa-bars-staggered" style="font-size: 25px;"></i></span>
+               </button>
+               <div class="offcanvas offcanvas-end w-md-25 w-sm-50" tabindex="-1" id="openMenu">
+                     <div class="offcanvas-header">
+                           <a href="#"><img src="./images/w-1-removebg-preview.png" class="img-fluid"></a>
+                           <button type="button" class="btn-close px-2" data-bs-dismiss="offcanvas"></button>
+                     </div>
+                     <div class="offcanvas-body">
+                           <ul class="navbar-nav ms-auto">
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./index.html" class="nav-link px-3 rounded-2">হোম</a></li>
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./gallery.html" class="nav-link px-3 rounded-2">গ্যালারি</a></li>
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./about.html" class="nav-link px-3 rounded-2">আমরা</a></li>
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./preadmit.html" class="nav-link px-3 rounded-2">ভর্তি আগ্রহী</a></li>
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0 dropdown Academic"><a href="#" data-bs-target="#academicMenu" data-bs-toggle="dropdown" data-bs-auto-close="true" class="nav-link px-3 rounded-2">একাডেমিক <i class="fa-solid fa-angle-down arrow"></i></a>
+                                       <div class="dropdown-menu p-4 bg-light" id="academicMenu">
+                                             <div class="d-flex">
+                                                <ul class="list-unstyled p-2">
+                                                      <li><a href="./admission_info.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> ভর্তি তথ্য</a></li>
+                                                      <li><a href="./all_courses.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> কোর্স সমূহ</a></li>
+                                                      <li><a href="./application_eligibility.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> আবেদন যোগ্যতা</a></li>
+                                                      <li><a href="./sylabus.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> সিলেবাস</a></li>
+                                                      <li><a href="./class_routine.html" class="dropdown-item"> <i class="fa-solid fa-angles-right fa-fw me-1"></i> ক্লাস রুটিন</a></li>
+                                                </ul>
+                                                <ul class="list-unstyled p-2">
+                                                      <li><a href="./teachers.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>শিক্ষক মণ্ডলী</a></li>
+                                                      <li><a href="./students.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>ছাত্র ছাত্রী</a></li>
+                                                      <li><a href="./employee.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>কর্মচারী</a></li>
+                                                      <li><a href="./rules.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>নীতিমালা</a></li>  
+                                                </ul>
+                                             </div>
+                                       </div>
+                                 </li>
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0 dropdown" ><a href="#" class="nav-link px-3 rounded-2"data-bs-toggle="dropdown" data-bs-target="#aboutSection" data-bs-auto-close="true" aria-controls="aboutSection">অন্যান্য  <i class="fa-solid fa-angle-down arrow"></i></a>
+                                       <ul class="dropdown-menu p-3" id="aboutSection">
+                                             <div class="d-flex">
+                                                <ul class="list-unstyled">
+                                                   <li><a href="./our_goal.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>আমাদের লক্ষ্য ও উদ্দেশ্য </a></li>
+                                                   <li><a href="./our_news.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>সংবাদ</a></li>
+                                                   <li><a href="./academic-calender.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>একাডেমিক ক্যালেন্ডার</a></li>
+                                                </ul>
+                                             </div>
+                                       </ul>
+                                 </li>
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./contact.html" class="nav-link active text-light px-3 rounded-2">যোগাযোগ</a></li>
+                                 <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="#" class="nav-link px-3 rounded-2"><i class="fa-solid fa-user"></i> লগইন</a></li>
+                           </ul>
+                     </div>
+               </div>
+         </div>
+      </nav>
+      <!-- navbar end here -->
+      <div class="container">
+         <!-- contact section start here -->
+         <div id="contactUs" class="bg-light p-4 rounded-3">
+            <h1 class="fw-bold services_title text-center position-relative animate mb-5">যোগাযোগ</h1>
+            <div class="row">
+               <div class="col-12 col-lg-6 col-xl-6 mt-5">
+                  <h5 class="contact_title">আমাদের সাথে সরাসরি যোগাযোগ করতে নিচের যেকোন মাধ্যম ব্যবহার করতে পারেন।</h5>
+                  <ul class="list-unstyled mt-4">
+                     <li class="mt-2"><a href="#" class="text-decoration-none"><i class="fa-solid fa-phone fa-fw me-1"></i>+8801831303692</a></li>
+                     <li class="mt-2"><a href="#" class="text-decoration-none"><i class="fa-brands fa-whatsapp me-2"></i>+8801341685969</a></li>
+                     <li class="mt-2"><a href="#" class="text-decoration-none"><i class="fa-solid fa-at me-2"></i>support@sctc.com</a></li>
+                     <li class="mt-2"><a href="https://www.facebook.com/jahedulislam.jishan.9" class="text-decoration-none"><i class="fa-brands fa-facebook me-2"></i>fb.com/computertraningcenter</a></li>
+                     <li class="mt-2"><i class="fa-solid fa-location-dot fa-fw me-1"></i>সাতকানিয়া কলেজ রোড়, সাতকানিয়া, চট্টগ্রাম</li>
+                     <li class="mt-3"><i class="fa-solid fa-clock fa-fw me-1"></i>যোগাযোগের সময় - সকাল 10 টা থেকে রাত 10 টা.</li>
+                  </ul>
+               </div>
+               <div class="col-12 col-lg-6 col-xl-6 d-none d-lg-block">
+                  <img src="./images/contact.23fbd6d6.svg" class="w-75 img-fluid">
+               </div>
+               <h1 class="fw-bold services_title text-center position-relative animate mb-5">অথবা মেসেজ পাঠান</h1>
+            </div>
+            <div class="card mt-lg-5 ">
+               <div class="card-body p-4">
+                  <div class="row">
+                     <div class="col">
+                        <div class="row">
+                           <div class="col-12 col-lg-6 col-xl-6">
+                              <label class="form-label fw-bold ms-1" for="firstName">প্রথম নাম<span class="text-danger fw-bold ms-1">*</span></label>
+                              <input type="text" name="firstName" id="firstName" required class="form-control py-lg-2">
+                           </div>
+                           <div class="col-12 col-lg-6 col-xl-6 mt-3 mt-lg-0">
+                              <label class="form-label fw-bold ms-1" for="lastName">শেষ নাম<span class="text-danger fw-bold ms-1">*</span></label>
+                              <input type="text" name="lastName" id="lastName" required class="form-control py-lg-2">
+                           </div>
+                        </div>
+                        <div class="row mt-4">
+                           <div class="col-12 col-lg-6 col-xl-6 ">
+                              <label class="form-label fw-bold ms-1" for="email">ই-মেইল<span class="text-danger fw-bold ms-1">*</span></label>
+                              <input type="email" name="email" id="email" required class="form-control py-lg-2">
+                           </div>
+                           <div class="col-12 col-lg-6 col-xl-6 mt-3 mt-lg-0">
+                              <label class="form-label fw-bold ms-1" for="phoneNumber">মোবাইল নম্বর<span class="text-danger fw-bold ms-1">*</span></label>
+                              <input type="number" name="phoneNumber" id="phoneNumber" required class="form-control py-lg-2">
+                           </div>
+                        </div>
+                        <div class="row mt-4">
+                           <div class="col">
+                              <label class="form-label fw-bold ms-1" for="message">আপনার অভিমত লিখুন<span class="text-danger fw-bold ms-1">*</span></label>
+                              <textarea name="message" id="message" cols="30" rows="5" class="form-control"></textarea>
+                           </div>
+                        </div>
+                        <div class="row mt-4">
+                           <div class="col d-grid">
+                              <button type="submit" class="btn btn-primary d-block text-center submitButton">সাবমিট করুন</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- contact section end here -->
+      </div>
+      <!-- footer section start here -->
+         <section id="footer" class="bg-dark p-4 pb-0 mt-5 text-light">
+            <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-light">
+                        <div class="row">
+                              <ul class="col-12 col-lg-6 col-xl-6 location_detail list-unstyled">
+                                    <li><i class="fa-solid fa-location-dot fa-fw"></i>সাতকানিয়া কলেজ রোড়, সাতকানিয়া, চট্টগ্রাম</li>
+                                    <li><i class="fa-solid fa-phone me-2"></i>হট লাইন: ০১৮৩১৩০৩৬৯২</li>
+                                    <li><i class="fa-solid fa-envelope me-2"></i> oursctc@gmail.com</li>
+                              </ul>
+                              <ul class="col-12 col-lg-6 col-xl-6 mt-4 mt-lg-0 list-unstyled quick_links">
+                                    <li><a href="#">আবেদন যোগ্যতা</a></li>
+                                    <li><a href="#">কোর্সসমূহ</a></li>
+                                    <li><a href="#">ভর্তি তথ্য</a></li>
+                                    <li><a href="#">ক্লাস রুটিন</a></li>
+                                    <li><a href="#">যোগাযোগ</a></li>
+                              </ul>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 clearfix mt-5 mt-lg-0">
+                        <ul class="list-inline float-start social_links">
+                              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                              <li class="list-inline-item mb-0 mb-lg-4"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                              <li><a href="#">সাপোর্টেড ব্রাউজার</a></li>
+                              <li><a href="#">শর্তাবলি</a></li>
+                              <li><a href="#">প্রাইভেসি পলিসি</a></li>
+                        </ul>
+                        <div class="float-start float-lg-end d-none d-lg-block">
+                              <img src="./images/w-1.jpeg" class="brand_logo rounded-circle" style="width: 100px;">
+                        </div>
+                  </div>
+                  <p class="text-center bg-dark copyright_text mt-4" style="font-size: small;">কপিরাইট ©2024 সর্বস্বত্ব সংরক্ষিত।</p>
+               </div>
+         </section>
+         <!-- footer section end here -->
+      <!-- JS & JQUERY cdns -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script type="module" src="script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+   </body>
+</html>

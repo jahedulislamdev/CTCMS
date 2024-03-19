@@ -1,0 +1,346 @@
+.colors{ 
+      background-color: linear-gradient(to right , #009245 , #FCEE21);
+      background-color: linear-gradient(161deg, #E2871C 0%, rgba(77, 65, 6, 0.00) 100%);
+      background-color: linear-gradient(161deg, #E21CE2 0%, rgba(77, 6, 55, 0.00) 100%);
+      background-color: linear-gradient(161deg, #371CE2 0%, rgba(37, 6, 77, 0.00) 100%);
+      /* buttons bg*/
+      /* background: linear-gradient(90deg, #661BC6 -26.01%, #924AEF 121.7%); */
+       /* background: linear-gradient(90deg, #E855DE -26.01%, #5400EE 121.7%); */
+       /* background: linear-gradient(90deg, #1B8DC6 -26.01%, #00925B 121.7%); */
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+}
+*{ 
+      font-family: 'SolaimanLipi', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+}
+::-webkit-scrollbar{ 
+      width: 15px;
+      
+}
+::-webkit-scrollbar-thumb{ 
+      background: linear-gradient(161deg, #1b8dc645 0%, rgba(37, 6, 77, 0.136) 100%);
+      border-radius: 7px;
+}
+::-webkit-scrollbar-track{ 
+      background: #ddd;
+      border-radius: 7px;
+}
+/* navbar style start here */
+.navbar{ 
+      height: 80px;
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+      box-shadow: rgba(0, 0, 0, 0.43) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 5px;
+}
+.navbar .navbar-brand img{ 
+      width: 200px;
+}
+.offcanvas-header img{ 
+      width:40px ;
+}
+.fa-bars-staggered{ 
+      color: #00925B;
+}
+.brand_name p{ 
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 14px;
+}
+.nav-item .active{ 
+       background: linear-gradient(90deg, #1B8DC6 -26.01%, #00925B 121.7%);
+}
+.nav-link{ 
+      font-weight: 600;
+      transition: .5s;
+      color: rgba(0, 0, 0, 0.546);
+      white-space: nowrap;
+}
+.nav-link:hover{ 
+      background: #00000011;
+      color: black;
+      font-weight: bolder;
+}
+.dropdown-menu{ 
+      background: #F8F9FA;
+}
+.dropdown-item{ 
+      transition: all ease .35s;
+}
+.dropdown-item:hover{ 
+      background: #00000011;
+      border-radius: 7px;
+      color: black;
+      font-weight: 800;
+      margin-left: 5px;
+}
+.fa-angles-right{ 
+      font-size: 13px;
+}
+.dropdown-item:hover .fa-angles-right{ 
+      color: #00925B;
+}
+.nav-item .active:hover{ 
+      background: linear-gradient(90deg, #1B8DC6 -26.01%, #00925B 121.7%);
+}
+/* dropdown transition breakpoints*/
+@media only screen and (min-width:992px) {
+      .dropdown-menu{ 
+            opacity: 0; 
+            transition: .35s ease-in-out;
+      }
+      .navbar .dropdown:hover .dropdown-menu{ 
+            display: block;
+            opacity: 1;
+      }
+}
+.arrow{ 
+      transition: .35s;
+}
+.navbar .dropdown:hover .arrow { 
+      transform: rotate(-90deg);
+}
+/* navbar style start end*/
+/* carousel style start here */
+.slider_btn{ 
+      background: linear-gradient(90deg, #1B8DC6 -26.01%, #00925B 121.7%);
+}
+.main .carousel-item .card-img-overlay{ 
+      background: #000001a6;
+      margin: 16px;
+}
+.carousel .carousel-item img{ 
+      height: 100dvh;
+      width: 100%;
+}
+.card-title{
+      font-size: 40px;
+      font-weight: 600;
+}
+.card-text{ 
+      font-size: 25px;
+}
+.carousel-control-prev, .carousel-control-next{ 
+      display: block;
+      opacity: 0;
+      transition: 1s;
+}
+.carousel:hover .carousel-control-prev{ 
+      display: block;
+      opacity: 1;
+}
+.carousel:hover .carousel-control-next{ 
+      display: block;
+      opacity: 1;
+}
+@media screen and (max-width:768px) {
+      .carousel .carousel-item img{ 
+            height: 350px;
+            width: 100%;
+      } 
+}
+@media screen and (max-width:560px) {
+      .carousel .carousel-item img{ 
+            height: 230px;
+            width: 100%;
+      }
+      .card-title{
+            font-size: 20px;
+            margin-left: 30px;
+      }
+      .about_text #more{ 
+            display: none;
+      }
+}
+/* carousel style end here */
+/* about section style start here */
+.about_text, .about_text span, .about_text a{ 
+      font-size: 20px;
+      text-align: justify;
+}
+/* about section style end here */
+/* swiper slider style start here*/
+.swiper {
+      width: 100%;
+      margin: 80px 0 50px 0;
+      text-align: center;
+}
+.swiper-slide{ 
+      border-radius: 10px;
+}
+.services_title{ 
+      color: #1B8DC6;
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+      margin-top: 30px;
+}
+.services_title::after { 
+      content: "";
+      background: linear-gradient(90deg, #1B8DC6 -26.01%, #00925B 121.7%);
+      border-radius: 6px;
+      position: absolute;
+      bottom: -28px;
+      left: calc(50% - 40px);
+      width: 80px;
+      height: 10px;
+}
+.swiper-wrapper .s1, #allcourses .course1{
+      background: linear-gradient(161deg, #371CE2 0%, rgba(37, 6, 77, 0.553) 100%);
+}
+.swiper-wrapper .s2, #allcourses .course2{ 
+      background: linear-gradient(161deg , #42275a , #693a62c3);
+}
+.swiper-wrapper .s3, #allcourses .course3{ 
+      background: linear-gradient(161deg, #371CE2 0%, rgba(37, 6, 77, 0.553) 100%);
+}
+.swiper-wrapper .s4, #allcourses .course4{ 
+      background: linear-gradient(161deg, #04392f 0%, rgba(2, 53, 61, 0.621) 100%);
+}
+.swiper-wrapper .s5, #allcourses .course5{ 
+      background: linear-gradient(161deg, #352007 0%, rgba(77, 65, 6, 0.759) 100%);
+}
+.swiper-wrapper .s6, #allcourses .course6{ 
+      background: linear-gradient(161deg , #320f51 , #693a62a4);
+}
+.course_title{ 
+      font-weight: 700;
+      color: #fff;
+      font-size: 24px;
+}
+.course_price,
+.course_description{ 
+      background: linear-gradient(90deg, #1B8DC6 -26.01%, #00925B 121.7%);
+      color: #fff;
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+}
+.course_description:hover{ 
+      background: linear-gradient(90deg, #00925B -26.01%,#1B8DC6 121.7%);
+}
+/* swiper slider style end here  */
+/* footer section style start here */
+.quick_links li a{ 
+      text-decoration: none;
+      color: #ddd;
+      transition: .35s;
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+      line-height: 2;
+}
+.quick_links li a:hover{ 
+      color: #00000049;
+}
+.location_detail li{ 
+      font-weight: 300;
+      font-size: 13px;
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+      line-height: 2;
+}
+.location_detail .fa-solid{ 
+      font-size: 13px;
+}
+.social_links .fa-brands{ 
+      margin-right: 10px;
+      font-size: 23px;
+      color: #ddd;
+}
+.social_links li a{
+      text-decoration: none;
+      line-height: 2;
+      color: #ddd;
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+}
+.copyright_text{ 
+      color: #dddddd9f;
+      margin-bottom: 4px;
+      padding-bottom: 0;
+}
+/* footer section style end here */
+/* pre admission page style start here */
+ .close, .contact_title,  #contactUs ul li, .pre_admission_title,
+  .submitButton, .about-title, .card-link, .all_courses_btn, .course_title{ 
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+ }
+#contactUs .card-body input:focus { 
+      background: #dddddd4d;
+}
+.card-body label, .all_courses_btn{ 
+      font-size: 18px;
+}
+.card-body .submitButton , .all_courses_btn { 
+      background: linear-gradient(90deg, #1B8DC6 -26.01%, #00925B 121.7%);
+}
+#contactUs ul li a{ 
+      color: #393269;
+}
+.eduQalification_title{ 
+      font-size: 29px;
+}
+.card-header .pre_admission_title{ 
+      font-size: 30px;
+}
+.card .input-group-text{ 
+      background: #dddddd49;
+}
+@media screen and (min-width:992px) {
+      #Preadmit .container{
+            width: 50%;
+      }
+}
+/*pre admission page style end here */
+/* about section style start */
+.about-title{ 
+      font-size: 20px;
+}
+/* about section style end */
+/* gallery section style start */
+#gallery .card img{
+     max-height:350px;
+     width: 100%;
+}
+#gallery .card-img-overlay{
+      background:linear-gradient(90deg, #1b8dc69f -26.01%, #00925a98 121.7%);
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer;
+      transition: .35s ease-in-out;
+}
+#gallery .card:hover .card-img-overlay{ 
+      opacity: 1;
+      visibility: visible;
+}
+#gallery .card-link{ 
+      font-size: 19px;
+}
+/* gallery section style end */
+/* admission info start*/
+#admissionInfo .rule, #admissionInfo .fa-angles-right{
+      font-size: 20px;
+}
+/* admission info end*/
+#admissionInfo .card-text, .course_duration, .find-students{ 
+      font-family: Montserrat, Hind Siliguri, sans-serif;
+}
+/* media queries */
+/*animation start here */
+@media screen and (min-width:992px){
+      .inanimation .animate{
+            margin-top: 50px;
+            opacity: 0;
+            transition: 1s;
+      }
+      .inanimation.show_animate .animate{
+            opacity: 1;
+            margin-top:0 ;
+      }
+      .slider_btn{ 
+            margin-left: 70px !important;
+      }
+}
+/*  animation style end here */
+@media screen and (max-width:768px) {
+      .card-header .pre_admission_title{ 
+            font-size: 18px;
+      }
+      #studentInfo, #classRoutine{ 
+            width: 100% !important;
+      }
+}

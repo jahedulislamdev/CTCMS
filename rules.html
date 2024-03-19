@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="This is a computer traning cennter management system. We manage Computer training center software, courses, instructors, & students online.">
+      
+      <!-- CSS & Bootstrap cdns  -->
+      <link rel="shortcut icon" href="./images/w-1.jpeg" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700;800&amp;family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Fira+Sans:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <link rel="stylesheet" href="style.css">
+      <title>Computer Training Center Management System</title>
+</head>
+<style>
+      #rules .role{ 
+            font-size: 30px;
+      }
+</style>
+<body>
+   <!-- navbar start here -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-2">
+      <div class="container">
+            <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+                  <img src="./images/logo-removebg-preview.png" alt="logo" class="img-fluid m-auto">
+            </a>
+            <button type="button" class="navbar-toggler border border-0" data-bs-toggle="offcanvas" data-bs-target="#openMenu" aria-controls="openMenu">
+                  <span><i class="fa-solid fa-bars-staggered" style="font-size: 25px;"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end w-md-25 w-sm-50" tabindex="-1" id="openMenu">
+                  <div class="offcanvas-header">
+                        <a href="#"><img src="./images/w-1-removebg-preview.png" class="img-fluid"></a>
+                        <button type="button" class="btn-close px-2" data-bs-dismiss="offcanvas"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="index.html" class="nav-link px-3 rounded-2">হোম</a></li>
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="../gallery.html" class="nav-link px-3 rounded-2">গ্যালারি</a></li>
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./about.html" class="nav-link px-3 rounded-2">আমরা</a></li>
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./preadmit.html" class="nav-link px-3 rounded-2">ভর্তি আগ্রহী</a></li>
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0 dropdown Academic"><a href="#" data-bs-target="#academicMenu" data-bs-toggle="dropdown" data-bs-auto-close="true" class="nav-link active text-light px-3 rounded-2">একাডেমিক <i class="fa-solid fa-angle-down arrow"></i></a>
+                                    <div class="dropdown-menu p-4 bg-light" id="academicMenu">
+                                          <div class="d-flex">
+                                                <ul class="list-unstyled p-2">
+                                                      <li><a href="./admission_info.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> ভর্তি তথ্য</a></li>
+                                                      <li><a href="./all_courses.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> কোর্স সমূহ</a></li>
+                                                      <li><a href="./application_eligibility.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> আবেদন যোগ্যতা</a></li>
+                                                      <li><a href="./sylabus.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i> সিলেবাস</a></li>
+                                                      <li><a href="./class_routine.html" class="dropdown-item"> <i class="fa-solid fa-angles-right fa-fw me-1"></i> ক্লাস রুটিন</a></li>
+                                                </ul>
+                                                <ul class="list-unstyled p-2">
+                                                      <li><a href="./teachers.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>শিক্ষক মণ্ডলী</a></li>
+                                                      <li><a href="./students.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>ছাত্র ছাত্রী</a></li>
+                                                      <li><a href="./employee.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>কর্মচারী</a></li>
+                                                      <li><a href="./rules.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>নীতিমালা</a></li>  
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </li>
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0 dropdown" ><a href="#" class="nav-link px-3 rounded-2"data-bs-toggle="dropdown" data-bs-target="#aboutSection" data-bs-auto-close="true" aria-controls="aboutSection">অন্যান্য  <i class="fa-solid fa-angle-down arrow"></i></a>
+                                    <ul class="dropdown-menu p-3" id="aboutSection">
+                                          <div class="d-flex">
+                                                <ul class="list-unstyled">
+                                                      <li><a href="./our_goal.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>আমাদের লক্ষ্য ও উদ্দেশ্য </a></li>
+                                                      <li><a href="./our_news.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>সংবাদ</a></li>
+                                                      <li><a href="./academic-calender.html" class="dropdown-item"><i class="fa-solid fa-angles-right fa-fw me-1"></i>একাডেমিক ক্যালেন্ডার</a></li>
+                                                </ul>
+                                          </div>
+                                    </ul>
+                              </li>
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="./contact.html" class="nav-link px-3 rounded-2">যোগাযোগ</a></li>
+                              <li class="nav-item mx-lg-1 my-2 my-lg-0 my-xl-0"><a href="#" class="nav-link px-3 rounded-2"><i class="fa-solid fa-user"></i> লগইন</a></li>
+                        </ul>
+                  </div>
+            </div>
+      </div>
+   </nav>
+   <!-- navbar end here -->
+   <div id="rules">
+      <div class="container">
+            <h1 class="fw-bold my-5 services_title text-center position-relative animate">নীতিমালা</h1>
+            <div class="card bg-light">
+                  <div class="card-body">
+                        <ul class="list-unstyled">
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">৫ জানুয়ারী হতে ক্লাস শুরু</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">ভর্তি ফরম বিতরন ও ভর্তি ১৫ ডিসেম্বর থেকে ২০ ডিসেম্বর ভর্তি পরীক্ষা ও ফলাফল ২১-৩১ ডিসেম্বর</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule"> ইউনিফরম (ড্রেস) পরিধান করিয়া ক্লাস করা প্রত্যেক ছাত্র/ছাত্রীদের বাধ্যতামূলক</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">নতুন বই বিতরণ ০১ জানুয়ারী-০৪ জানুয়ারী</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">ক্লাস সমাবেশ ৯.৪৫ হতে ১০.০০টা এবং শ্রেণী কার্যক্রম ১০.০১ মিনিট থেকে ৪.০০টা পর্যন্ত</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">বিশেষ বিশেষ দিন (শহীদ দিবস,আন্তর্জাতিক মাতৃভাষা দিবস, স্বাধীনতা ও জাতীয় দিবস, ঈদ-ই-মিলাদুন্নবী(স:)ও পবিত্র মেরাজুন্নবী (স:) ) ইত্যাদি দিবসগুলো উপলক্ষে অনুষ্ঠানে যোগদান ও অংশগ্রহণ বাধ্যতামূলক।</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">অর্ধ বার্ষিক ও বার্ষিক পরীক্ষার সমন্বয়ে ফলাফল প্রকাশ।</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">অনগ্রসর ছাত্র-ছাত্রীদের জন্য বিশেষ কোচিং ক্লাসের ব্যবস্থা।</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">অর্ধ বার্ষিক ও বার্ষিক পরীক্ষার সমন্বয়ে ফলাফল প্রকাশ।</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">গ্রেডিং পদ্ধতিতে ফলাফল প্রকাশ ও মাদ্রাসা বৃত্তি প্রদান (মেধাবী ও গরীব)</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">সকল ছাত্র-ছাত্রীদের বিনা বেতনে অধ্যয়নের সুযোগ।</span></li>
+                              <li class="mb-2"><i class="fa-solid fa-angles-right fa-fw me-2"></i> <span class="rule">গ্রেডিং পদ্ধতিতে ফলাফল প্রকাশ ও মাদ্রাসা বৃত্তি প্রদান (মেধাবী ও গরীব)</span></li>
+                        </ul>
+                  </div>
+      </div>
+</div>
+   <!-- footer section start here -->
+    <section id="footer" class="bg-dark p-4 pb-0 mt-5 text-light">
+      <div class="row m-0">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                  <div class="row">
+                        <ul class="col-12 col-lg-6 col-xl-6 location_detail list-unstyled">
+                              <li><i class="fa-solid fa-location-dot fa-fw me-1"></i>সাতকানিয়া কলেজ রোড়, সাতকানিয়া, চট্টগ্রাম</li>
+                              <li><i class="fa-solid fa-phone me-2"></i>হট লাইন: ০১৮৩১৩০৩৬৯২</li>
+                              <li><i class="fa-solid fa-envelope me-2"></i> oursctc@gmail.com</li>
+                        </ul>
+                        <ul class="col-12 col-lg-6 col-xl-6 mt-4 mt-lg-0 list-unstyled quick_links">
+                              <li><a href="#">আবেদন যোগ্যতা</a></li>
+                              <li><a href="#">কোর্সসমূহ</a></li>
+                              <li><a href="#">ভর্তি তথ্য</a></li>
+                              <li><a href="#">ক্লাস রুটিন</a></li>
+                              <li><a href="./contact.html">যোগাযোগ</a></li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 clearfix mt-5 mt-lg-0">
+                  <ul class="list-inline float-start social_links">
+                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="list-inline-item mb-0 mb-lg-4"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#">সাপোর্টেড ব্রাউজার</a></li>
+                        <li><a href="#">শর্তাবলি</a></li>
+                        <li><a href="#">প্রাইভেসি পলিসি</a></li>
+                  </ul>
+                  <div class="float-start float-lg-end d-none d-lg-block">
+                        <img src="./images/w-1.jpeg" class="brand_logo rounded-circle" style="width: 100px;">
+                  </div>
+            </div>
+            <p class="text-center bg-dark copyright_text mt-4" style="font-size: small;">কপিরাইট ©2024 সর্বস্বত্ব সংরক্ষিত।</p>
+      </div>
+   </section>
+   <!-- footer section end here -->
+   <!-- JS & JQUERY cdns -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script type="module" src="script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+</body>
