@@ -43,6 +43,18 @@ window.onscroll = () => {
   } )
 }
 // scrolling animaition end here
+
+// gallery modal script 
+document.addEventListener('click' , (e)=> { 
+  // console.log(e.target)
+  if(e.target.classList.contains("gallery_img")){
+    const src = e.target.getAttribute("src");
+    // console.log(src);
+    document.querySelector(".modal_img").src = src;
+    const myModal = new bootstrap.Modal(document.getElementById('galleryModal'))
+    myModal.show();
+  }
+})
 // see more 
 const see = document.querySelector("#see");
 const more = document.querySelector("#more");
@@ -50,7 +62,3 @@ see.addEventListener("click", () => {
   more.style.display = "block";
   see.style.display = "none";
 })
-
-
-
-

@@ -295,21 +295,16 @@
 #gallery .card img{
      max-height:350px;
      width: 100%;
+     cursor: pointer;
+     transition: .5s;
 }
-#gallery .card-img-overlay{
-      background:linear-gradient(90deg, #1b8dc69f -26.01%, #00925a98 121.7%);
-      opacity: 0;
-      visibility: hidden;
-      cursor: pointer;
-      transition: .35s ease-in-out;
-}
-#gallery .card:hover .card-img-overlay{ 
-      opacity: 1;
-      visibility: visible;
+#gallery .card img:hover{ 
+      padding:6px;
 }
 #gallery .card-link{ 
       font-size: 19px;
 }
+
 /* gallery section style end */
 /* admission info start*/
 #admissionInfo .rule, #admissionInfo .fa-angles-right{
