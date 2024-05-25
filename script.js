@@ -37,9 +37,9 @@ window.onscroll = () => {
     if(top >= offset && top < offset + height){ 
       section.classList.add('show_animate');
     }
-    // else{
-    //   section.classList.remove('show_animate')
-    // }
+    else{
+      section.classList.remove('show_animate')
+    }
   } )
 }
 // scrolling animaition end here
