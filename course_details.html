@@ -17,6 +17,54 @@
       <link rel="stylesheet" href="style.css">
       <title>CTCMS</title>
 </head>
+<style>
+      .course-banner .course-img{ 
+            width: 100%;
+            max-height: 360px;
+      }
+      .course-overview .detail h5,
+      .course-overview .detail span,
+      .course-facility li,
+      .instractor-details { 
+            font-family: Montserrat, Hind Siliguri, sans-serif;
+            font-size: 22px;
+      }
+      .overview-title{ 
+            font-weight: 900;
+            font-family: Montserrat, Hind Siliguri, sans-serif;
+      }
+      #courseFee{ 
+            font-family: 'SolaimanLipi', Arial, sans-serif; 
+      }
+      .instractor-profile{ 
+            height: 170px;
+            width: 170px;
+      }
+      .course-facility li{ 
+            margin-bottom: 10px;
+      }
+      @media screen and (max-width:576px) {
+            iframe{ 
+                  margin-top: 16px;
+                  width: 100%;
+                  height: 230px;
+            }
+      .course-overview .detail h5,
+      .course-overview .detail span { 
+            font-size: 19px;
+      }
+      .instractor-profile{ 
+            height: 100px;
+            width: 100px;
+      }
+      .instractor-details{ 
+            font-size: 14px;
+      }
+      .course-instructor{ 
+            width: 100% !important;
+      }
+      }
+</style>
 <body>
     <!-- navbar start here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-2">
@@ -74,11 +122,71 @@
                     </div>
               </div>
         </div>
-  </nav>
+      </nav>
   <!-- navbar end here -->
+  <!-- details starts here -->
+  <div id="courseDetils" class="container mt-2 mt-lg-4 p-2">
+      <div class="row part-1">
+            <div class="col-sm-12 col-md-6 course-banner bg-light p-2">
+                  <img src="https://static.vecteezy.com/system/resources/previews/008/174/458/non_2x/modern-online-education-for-banner-website-page-template-flat-illustration-of-e-learning-internet-course-application-learning-university-studies-classroom-tutorial-library-on-computer-free-vector.jpg" class="img-fluid course-img rounded">
+            </div>
+            <div class="col-sm-12 col-md-6 course-overview bg-light rounded mt-sm-4 m-md-0">
+                  <h3 class=" text-center  overview-title mt-5 mb-4 m-md-0">কোর্স ওভারভিউ</h3>
+                  <div class="ms-md-5 mt-md-4 detail">
+                        <h5>কোর্সের নাম : <span id="courseName" class="fw-semibold text-primary"> কম্পিউটার অফিস অ্যাপ্লিকেশন </span> </h5>
+                        <h5>কোর্সের মেয়াদ : <span id="courseDuration">৬ মাস</span></h5>
+                        <h5>কোর্স ফি : <span id="courseFee"> ১৫,০০০</span></h5>
+                        <h5>ভর্তি যোগ্যতা :  <span id="courseQ">এস এস সি</span></h5>
+                  </div>
+            </div>
+      </div>
+      <!-- instractor st -->
+      <div class="w-75 m-auto course-instructor bg-light rounded mt-5 py-4">
+            <h3 class=" text-center overview-title mt-5 mb-4 m-md-0"> কোর্স ইন্সট্রাক্টর </h3>
+            <div class="ms-4 d-flex align-items-center justify-content-center">
+                  <img src="./images/avatar.png" alt="instractor img" class="img-fluid rounded-pill instractor-profile">
+                  <div class="ms-1 ms-md-4">
+                        <p class="p-0 m-0 instractor-details"> Top Rated Plus Freelancer,Fiver </p>
+                        <p class="p-0 m-0 instractor-details"> Founder, Freelance GURU</p>      
+                  </div>
+            </div>
+      </div>
+      <!-- instractor end -->
+      <!-- facility and video st -->
+      <div class="row mt-5 rounded py-lg-4 bg-light">
+            <div class="course-syllabus col-12 col-md-6">
+                  <div class="curriculum ms-lg-3">
+                        <h3 class=" text-center overview-title mt-5 mb-4 m-md-0"> এই কোর্সে যা যা থাকছে </h3>
+                        <ul class="ms-lg-3 mt-3 course-facility">
+                              <li> কোর্স সুবিদা সমুহ </li>
+                              <li> কোর্স সুবিদা সমুহ </li>
+                              <li> কোর্স সুবিদা সমুহ </li>
+                              <li> কোর্স সুবিদা সমুহ </li>
+                              <li> কোর্স সুবিদা সমুহ </li>
+                              <li> কোর্স সুবিদা সমুহ </li>
+                              <li> কোর্স সুবিদা সমুহ </li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="course-syllabus col-12 col-md-6">
+                  <h3 class=" text-center overview-title mt-5 mb-lg-5 m-md-0"> কোর্স সম্পর্কিত ভিডিও </h3>
+                  <iframe
+                        class="rounded"
+                        width="100%" height="350px" 
+                        src="https://www.youtube.com/embed/rM7fm9s33eE" 
+                        title="HTML Video Tag | HTML Tutorial For Beginners | HTML বাংলা টিউটোরিয়াল | HTML Bangla" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                  </iframe>
+            </div>
+      </div>
+      <!-- facility and video end -->
+  </div>
+  <!-- detail end here -->
   <!-- footer section start here -->
   <section id="footer" class="bg-dark pb-0 text-light mt-5">
-          <p class="text-center bg-dark copyright_text py-3" style="font-size: small;">কপিরাইট ©2024 সর্বস্বত্ব সংরক্ষিত।</p>
+          <p class="text-center bg-dark copyright_text py-3 m-0" style="font-size: small;">কপিরাইট ©2024 সর্বস্বত্ব সংরক্ষিত।</p>
     </div>
 </section>
 <!-- footer section end here -->
